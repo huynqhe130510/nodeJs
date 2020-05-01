@@ -15,7 +15,8 @@ module.exports.search = function(req, res) {
     });
 
     res.render('users/index', {
-        users: matchedUser
+        users: matchedUser,
+        value: q
     });
 };
 
