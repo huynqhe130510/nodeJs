@@ -12,7 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 var users = [
     { id: 1, name: 'Huy' },
-    { id: 2, name: 'Hieu' }
+    { id: 2, name: 'Hieu' },
+    { id: 3, name: 'An' }
 ]
 
 app.get('/', function(req, res) {
