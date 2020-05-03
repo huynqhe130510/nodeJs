@@ -1,0 +1,15 @@
+input[name=q] {
+    margin-left: 800px;
+}
+
+.product {
+    margin-top: 20px;
+}
+
+.paging {
+    margin-top: 20px;
+}
+
+.pagination {
+    justify-content: center;
+}
