@@ -15,5 +15,14 @@ module.exports = function(req, res, next) {
         }).write();
     }
 
+    var sessionId = req.signedCookies.sessionId;
+
+    res.locals.quantity = db
+        .get("sessions")
+        .find({ id: sessionId })
+        .get("cart")
+        .size()
+        .value()
+
     next();
 }
